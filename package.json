@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "I WANT to search for new books to read SO THAT I can keep a list of books to purchase",
   "main": "index.js",
-  "homepage" : "https://{savieclarke}.github.io/{booksearch}"
+  "homepage" : "https://{savieclarke}.github.io/{booksearch}",
   "scripts": {
     "start:dev": "concurrently \"cd server && npm run server\" \"cd client && npm run dev\"",
     "start": "npm run build && cd server && node server.js",
@@ -21,7 +21,6 @@
   "bugs": {
     "url": "https://github.com/savieclarke/booksearch/issues"
   },
-  "homepage": "https://github.com/savieclarke/booksearch",
   "dependencies": {
     "apollo-server-express": "^3.6.7",
     "express": "^4.17.3",
