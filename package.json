@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "I WANT to search for new books to read SO THAT I can keep a list of books to purchase",
   "main": "server.js",
-  "homepage": "https://{savieclarke}.github.io/{booksearch}",
+  "homepage": "https://savieclarke.github.io/booksearch",
   "scripts": {
     "start:dev": "concurrently \"cd server && npm run server\" \"cd client && npm run dev\"",
     "start": "node server/server.js",
@@ -26,6 +26,9 @@
     "nodemon": "^2.0.15"
   },
   "dependencies": {
-    "gh-pages": "^3.2.3"
+    "apollo-server-express": "^2.25.3",
+    "express": "^4.17.2",
+    "gh-pages": "^3.2.3",
+    "graphql": "^15.8.0"
   }
 }
