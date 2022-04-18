@@ -3,14 +3,16 @@
   "version": "1.0.0",
   "description": "I WANT to search for new books to read SO THAT I can keep a list of books to purchase",
   "main": "server.js",
-  "homepage": "https://savieclarke.github.io/booksearch",
+  "homepage": "https://savieclarke.github.io/booksearch/",
   "scripts": {
     "start:dev": "concurrently \"cd server && npm run server\" \"cd client && npm run dev\"",
     "start": "node server/server.js",
     "server": "cd server nodemon server.js --ignore client",
     "build": "cd client && npm run build",
     "install": "cd server && npm i && cd ../client && npm i",
-    "client": "cd client && npm start"
+    "client": "cd client && npm start",
+    "predeploy": "npm run build",  
+    "deploy": "gh-pages -d build"
   },
   "repository": {
     "type": "git",
