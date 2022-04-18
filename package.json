@@ -2,14 +2,14 @@
   "name": "booksearch",
   "version": "1.0.0",
   "description": "I WANT to search for new books to read SO THAT I can keep a list of books to purchase",
-  "main": "index.js",
+  "main": "server.js",
   "homepage": "https://{savieclarke}.github.io/{booksearch}",
   "scripts": {
     "start:dev": "concurrently \"cd server && npm run server\" \"cd client && npm run dev\"",
-    "start": "npm run build && cd server && node server.js",
+    "start": "node server/server.js",
     "server": "cd server nodemon server.js --ignore client",
     "build": "cd client && npm run build",
-    "install": "cd client && npm install",
+    "install": "cd server && npm i && cd ../client && npm i",
     "client": "cd client && npm start"
   },
   "repository": {
