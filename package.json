@@ -11,7 +11,7 @@
     "build": "cd client && npm run build",
     "install": "cd server && npm i && cd ../client && npm i",
     "client": "cd client && npm start",
-    "predeploy": "npm run build",  
+    "predeploy": "npm run build",
     "deploy": "gh-pages -d build"
   },
   "repository": {
