@@ -1,36 +1,24 @@
 {
   "name": "booksearch",
   "version": "1.0.0",
-  "description": "I WANT to search for new books to read SO THAT I can keep a list of books to purchase",
-  "main": "server.js",
-  "homepage": "https://savieclarke.github.io/booksearch/",
+  "description": "",
+  "main": "server/server.js",
   "scripts": {
-    "start:dev": "concurrently \"cd server && npm run server\" \"cd client && npm run dev\"",
     "start": "node server/server.js",
-    "server": "cd server nodemon server.js --ignore client",
-    "build": "cd client && npm run build",
+    "develop": "concurrently \"cd server && npm run watch\" \"cd client && npm start\"",
     "install": "cd server && npm i && cd ../client && npm i",
-    "client": "cd client && npm start",
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d build"
+    "build": "cd client && npm run build"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/savieclarke/booksearch.git"
-  },
+  "keywords": [],
   "author": "",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/savieclarke/booksearch/issues"
-  },
   "devDependencies": {
-    "concurrently": "^7.0.0",
-    "nodemon": "^2.0.15"
+    "concurrently": "^5.1.0"
   },
   "dependencies": {
     "apollo-server-express": "^2.25.3",
     "express": "^4.17.2",
-    "gh-pages": "^3.2.3",
     "graphql": "^15.8.0"
   }
 }
+
