@@ -42,7 +42,7 @@ function App() {
             <Route path="/saved" element={<SavedBooks />} />
             <Route
               path="*"
-              element={<h1 className="display-2">Wrong page!</h1>}
+              element={<h1 className="display-2">Home page!</h1>}
             />
           </Routes>
         </>
