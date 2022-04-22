@@ -1,4 +1,4 @@
-import { gql } from '@apollo/client';
+import { gql } from "@apollo/client";
 
 export const GET_ME = gql`
   # create a GraphQL query to be executed by Apollo Client
@@ -15,6 +15,19 @@ export const GET_ME = gql`
         title
         authors
       }
+    }
+  }
+`;
+
+// https://www.googleapis.com/books/v1/volumes?q=harry+potter
+export const SEARCH_GOOGLE_BOOKS = gql`
+  query searchGoogleBooks($query: String!) {
+    books(query: $query) {
+      bookId
+      description
+      image
+      title
+      authors
     }
   }
 `;
